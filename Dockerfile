@@ -29,7 +29,7 @@ RUN curl -L https://storage.googleapis.com/kubernetes-release/release/v$KUBE_VER
     rm /var/cache/apk/*
 
 #install go
-RUN apk add --no-cache make musl-dev go
+RUN apk add --no-cache make musl-dev go nodejs npm
 
 # Configure Go
 ENV GOROOT /usr/lib/go
